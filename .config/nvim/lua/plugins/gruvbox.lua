@@ -7,7 +7,7 @@ return {
     config = function()
         local gruvbox = require("gruvbox")
         gruvbox.setup({
-            transparent_mode = false,
+            transparent_mode = true,
             overides = {
 
             }
