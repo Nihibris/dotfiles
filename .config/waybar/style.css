@@ -1,0 +1,47 @@
+ /*    --bg-clr: #282828;
+    --bg0-clr: #1d2021;
+    --fg0-clr: #fbf1c7;
+    --fg1-clr: #ebdbb2;
+    --red_d: #cc241d;
+    --red_l: #fb4934;
+    --green_d: #98971a;
+   --green_l: #b8bb26;
+*/
+
+ * {
+
+     font-family: "JetBrainsMono Nerd Font";
+     font-size: 16px;
+     background-color: transparent;
+     margin: 2px;
+ }
+
+ .modules-right,
+ #workspaces,
+ #clock {
+     min-width: 140px;
+     border-style: ridge;
+     border-color: #98971a;
+     border-radius: 8;
+     border-width: 4px;
+     background-color: #282828;
+ }
+
+ /*"tray"*/
+ #workspaces {
+     background-color: #282828;
+     color: #fbf1c7;
+ }
+
+ #workspaces button.active {
+     color: #98971a;
+ }
+
+ #clock {
+     padding: 8px;
+     background-color: #282828;
+ }
+
+ #pulseaudio {
+     color: #fbf1c7;
+ }
