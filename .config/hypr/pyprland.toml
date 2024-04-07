@@ -1,0 +1,10 @@
+[pyprland]
+plugins = ["scratchpads"]
+
+[scratchpads.term]
+animation = "fromTop"
+command = "alacritty --class dropterm"
+class = "dropterm"
+size = "75% 60%"
+max_size = "1440px 100%"
+margin = 50
