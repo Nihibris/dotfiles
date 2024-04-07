@@ -1,14 +1,17 @@
 {
     "position": "top",
     "height":30,
+    "spacing":10,
     "modules-left": [
         "clock",
     ],
     "modules-center": [
         "hyprland/workspaces",
     ],
-    "modules-right": [
-        "pulseaudio",
+    "modules-right":
+    [
+        "tray",
+        "wireplumber",
         "cpu",
         "memory",
     ],
@@ -33,18 +36,25 @@
             "default":"",
         }
     },
-    "pulseaudio": {
-        "format": "{volume}% {icon} ",
-        "format-muted":"󰝛",
-            "format-icons": {
-        "default":""
-        },
+
+    "wireplumber": {
+        "format": "{volume}% {icon}",
+        "format-muted":"󰝛", 
+        "max-volume":100,
         "scroll-step":1,
-        "on-click": "pavucontrol"
+        "on-click": "helvum",
+        "format-icons":["", "", ""],
     },
     
-    
-    
+    "cpu":{
+        "format": "{load}% ",
+    },
+    "memory": {
+        "format": "{used}G/{total}G "
+},
+   "tray": {
+        "spacing": 4,
+    }
     
     
     
