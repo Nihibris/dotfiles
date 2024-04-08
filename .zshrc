@@ -6,13 +6,18 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
-plugins=(git)
+plugins=(git archlinux) 
 
 source $ZSH/oh-my-zsh.sh
 
-alias poweroff= exec ~/scripts/poweroff.sh
+
+# Power and reboot
+alias poweroff="~/scripts/poweroff.sh"
 alias reboot="~/scripts/reboot.sh"
+
+# Misc
 alias vim=nvim
+
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
@@ -28,3 +33,4 @@ export NIXPKGS_ALLOW_UNFREE=1
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
