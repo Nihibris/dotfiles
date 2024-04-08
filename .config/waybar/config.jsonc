@@ -2,50 +2,48 @@
     "name":"bar1",
     "reload_style_on_change":true,
     "position": "top",
-    "height":50,
     "spacing":10,
     "modules-left": [
         "hyprland/workspaces",
     ],
     "modules-center": [
+        "tray",
         "clock",
     ],
     "modules-right":
     [
-        "tray",
         "pulseaudio",
-        "cpu",
-        "memory",
+        "temperature",
+
     ],
 
     "hyprland/workspaces": {
         "all-outputs":true,
-        "format":"{icon}",
+        "format":"{id} {icon}",
         "format-icons":{
             "active":"",
             "default":"",
         }
     },
 
-    "wireplumber": {
-        "format": "{volume}% {icon}",
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
         "format-muted":"󰝛", 
         "max-volume":100,
         "scroll-step":1,
         "on-click": "pavucontrol",
-        "format-icons":["", "", ""],
+        "format-muted":"",
+        "format-icons": {
+            "default":""},
+        "ignored-sinks": ["Easy Effects Sink"]
     },
     
-    "cpu":{
-        "format": "{load}% ",
+    "temperature":{
+        "format": " {temperatureC}°C",
     },
     "memory": {
         "format": "{used}G/{total}G "
 },
-   "tray": {
-        "spacing": 4,
-    }
-    
     
 
 }
