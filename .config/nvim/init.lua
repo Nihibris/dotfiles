@@ -14,4 +14,3 @@ vim.opt.rtp:prepend(lazypath)
 require("config")
 require("lazy").setup("plugins")
 -- this is a test
-vim.api.nvim_set_option("clipboard", "unnamed")

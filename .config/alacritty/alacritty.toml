@@ -1,4 +1,3 @@
-
 import = ["~/.config/alacritty/gruvbox_dark.toml"]
 [window]
 opacity = 0.70 
@@ -24,11 +23,6 @@ style = "Bold Italic"
 
 [font]
 size = 14 
-[keyboard]
-bindings = [
-{mode = "AppCursor", key = "C", mods = "Control", action = "CopySelection"},
-{mode = "AppCursor", key = "V", mods = "Control", action = "PasteSelection"}
-]
 [cursor.style]
 blinking = "Never"
 
