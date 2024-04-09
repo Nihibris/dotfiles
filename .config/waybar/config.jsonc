@@ -5,16 +5,18 @@
     "spacing":10,
     "modules-left": [
         "hyprland/workspaces",
+        "hyprland/window",
     ],
+
     "modules-center": [
         "tray",
         "clock",
     ],
+
     "modules-right":
     [
         "pulseaudio",
         "temperature",
-
     ],
 
     "hyprland/workspaces": {
@@ -26,6 +28,15 @@
         }
     },
 
+    "hyprland/window": {
+        "format": "{initialTitle}",
+        }
+    },
+
+    "tray": {
+        "show-passive-items": true,
+    }
+
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-muted":"󰝛", 
@@ -34,16 +45,20 @@
         "on-click": "pavucontrol",
         "format-muted":"",
         "format-icons": {
-            "default":""},
+            "default":""
+        },
         "ignored-sinks": ["Easy Effects Sink"]
     },
     
     "temperature":{
         "format": " {temperatureC}°C",
     },
+
     "memory": {
         "format": "{used}G/{total}G "
-},
+    },
+
+    
     
 
 }
