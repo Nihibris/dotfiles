@@ -26,8 +26,8 @@ style = "Bold Italic"
 size = 14 
 [keyboard]
 bindings = [
-{key = "C", mods = "Control", action = "Copy"},
-{key = "V", mods = "Control", action = "Paste"}
+{mode = "AppCursor", key = "C", mods = "Control", action = "CopySelection"},
+{mode = "AppCursor", key = "V", mods = "Control", action = "PasteSelection"}
 ]
 [cursor.style]
 blinking = "Never"
