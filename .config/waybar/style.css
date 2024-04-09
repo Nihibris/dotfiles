@@ -11,8 +11,8 @@
  box.module {
      box-shadow: inset 0px 3px 1 #a89984;
      color: #fbf1c7;
-     padding: 2 10px;
-     margin: 8 8 6 8;
+     padding: 1 10px;
+     margin: 8 0 6 8;
      color: #fbf1c7;
      border-style: solid;
      border-color: #a89984;
@@ -37,4 +37,5 @@
      box-shadow: inset 0px 3px 1 #cc241d;
      border-color: #cc241d;
      color: #cc241d;
+     margin-right: 8px;
  }
