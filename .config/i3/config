@@ -6,6 +6,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 exec discord
 exec openrgb
+exec steam
 
 exec_always ~/.config/polybar/launch.sh
 exec_always picom -b --config ~/.config/picom/picom.conf 
@@ -23,9 +24,10 @@ set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
-set $ws10 "0"
+set $ws10 "10"
 
 set $refresh_i3status killall -SIGUSR1 i3status
+
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
@@ -215,6 +217,6 @@ gaps top 40
 
 smart_gaps off 
 
-default_border pixel 1
+default_border pixel 2
 default_floating_border none 
 
