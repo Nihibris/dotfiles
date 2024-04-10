@@ -3,8 +3,13 @@ import = ["~/.config/alacritty/gruvbox_dark.toml"]
 opacity = 0.70 
 dynamic_title = false
 padding = {x = 0, y = 0}
+
+[env]
+WINIT_X11_SCALE_FACTOR = "1.0"
+
 [shell]
 program = "/bin/zsh"
+
 [font.normal]
 family = "JetBrainsMono Nerd Font"
 style = "Regular"
@@ -23,6 +28,7 @@ style = "Bold Italic"
 
 [font]
 size = 14 
+
 [cursor.style]
 blinking = "Never"
 
