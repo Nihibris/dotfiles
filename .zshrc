@@ -17,6 +17,7 @@ alias reboot="~/scripts/reboot.sh"
 
 # Misc
 alias vim=nvim
+alias py=python3
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
