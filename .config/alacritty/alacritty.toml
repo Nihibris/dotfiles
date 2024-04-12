@@ -3,9 +3,6 @@ import = ["~/.config/alacritty/gruvbox_dark.toml"]
 [env]
 WINIT_X11_SCALE_FACTOR = "0.9"
 
-[colors]
-draw_bold_text_with_bright_colors = true
-
 [window]
 opacity = 0.70 
 dynamic_title = false
