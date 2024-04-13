@@ -6,36 +6,30 @@
         "hyprland/workspaces",
         "hyprland/window",
     ],
-
     "modules-center": [
         "tray",
         "clock",
     ],
-
     "modules-right":
     [
         "pulseaudio",
         "temperature",
     ],
-
     "hyprland/workspaces": {
-        "all-outputs":true,
-        "format":"{id} {icon}",
+        "all-outputs":false,
+        "format":"{id}",
         "format-icons":{
             "active":"",
             "default":"",
         }
     },
-
     "hyprland/window": {
         "format": "{initialTitle}",
         }
     },
-
     "tray": {
         "show-passive-items": true,
     }
-
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-muted":"󰝛", 
@@ -48,17 +42,11 @@
         },
         "ignored-sinks": ["Easy Effects Sink"]
     },
-    
     "temperature":{
         "format": " {temperatureC}°C",
     },
-
     "memory": {
-        "format": "{used}G/{total}G "
+        "format": " {used}G"
     },
-
-    
-    
-
 }
 
