@@ -11,7 +11,8 @@ return {
         })
     end,
     dependencies = {
-        "nushell/tree-sitter-nu"
+        "nushell/tree-sitter-nu",
+        "theRealCarneiro/hyprland-vim-syntax",
     },
-    build = ":TSUpdate"
+
 }

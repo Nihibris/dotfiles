@@ -1,19 +1,18 @@
 {
-    "name":"bar1",
     "reload_style_on_change":true,
     "position": "top",
     "modules-left": [
         "hyprland/workspaces",
         "hyprland/window",
+        "tray",
     ],
     "modules-center": [
-        "tray",
         "clock",
     ],
     "modules-right":
     [
         "pulseaudio",
-        "temperature",
+        "memory",
     ],
     "hyprland/workspaces": {
         "all-outputs":false,
