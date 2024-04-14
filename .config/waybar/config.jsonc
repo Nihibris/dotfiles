@@ -1,51 +1,64 @@
 {
     "reload_style_on_change":true,
     "position": "top",
+
     "modules-left": [
         "hyprland/workspaces",
         "hyprland/window",
-        "tray",
     ],
+
     "modules-center": [
         "clock",
     ],
-    "modules-right":
-    [
+
+    "modules-right": [
+        "tray",
         "pulseaudio",
+        "cpu",
         "memory",
+        "network",
     ],
+
     "hyprland/workspaces": {
         "all-outputs":false,
-        "format":"{id}",
+        "format":"{icon}",
         "format-icons":{
+            "1":"󰈹",
+            "9":"",
+            "10":"",
             "active":"",
             "default":"",
         }
     },
+
     "hyprland/window": {
         "format": "{initialTitle}",
-        }
     },
-    "tray": {
-        "show-passive-items": true,
-    }
     "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "format-muted":"󰝛", 
-        "max-volume":100,
-        "scroll-step":1,
-        "on-click": "pavucontrol",
-        "format-muted":"",
-        "format-icons": {
-            "default":""
+         "format": "{icon} {volume}",
+          "format-icons": {
+              "default":[" ", " "]
+            },
+          "scroll-step": 1,
+          "on-click": "pavucontrol",
+          "ignored-sinks": ["Easy Effects Sink"]
         },
-        "ignored-sinks": ["Easy Effects Sink"]
+
+    "cpu": {
+        "format": "󰍛 {usage}%"
     },
-    "temperature":{
-        "format": " {temperatureC}°C",
-    },
+
     "memory": {
-        "format": " {used}G"
+        "format":" {used}GiB/{total}GiB",
     },
-}
+
+    "network": {
+        "interface": "wlan0",
+        "format-wifi":"{icon}{essid}",
+        "format-disconnected":"",
+        "tooltip-format-wifi":"{essid} {signalStrength}%",
+        "format-icons": ["󰢼 ", "󰢽 ","󰢾 "]
+    },
+
+    }
 
