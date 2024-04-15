@@ -32,6 +32,11 @@
     "hyprland/window": {
         "format": "{initialTitle}",
     },
+
+    "tray": {
+        "icon-size": 20,
+    },
+
     "pulseaudio": {
          "format": "{icon} {volume}",
           "format-icons": {

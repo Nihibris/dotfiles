@@ -10,6 +10,7 @@ window#waybar {
 
 box.module,
 label.module {
+    color: #fbf1c7;
     margin: 4px;
     padding: 2px;
     min-width: 64px;
