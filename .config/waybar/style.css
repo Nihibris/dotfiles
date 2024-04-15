@@ -1,5 +1,5 @@
 * {
-    font-size: 16px;
+    font-size: 14px;
     font-family: "JetBrainsMono Nerd Font";
     font-weight: 600;
 }
@@ -11,7 +11,7 @@ window#waybar {
 box.module,
 label.module {
     margin: 4px;
-    padding: 0px;
+    padding: 2px;
     min-width: 64px;
     border-radius: 12px;
 }
@@ -35,7 +35,7 @@ window#waybar.empty #window {
 }
 
 #workspaces button.active {
-    color: #1d2021;
+    color: #fbf1c7;
 }
 
 #clock {
@@ -51,16 +51,21 @@ window#waybar.empty #window {
     background: #98971a;
 }
 
+#memory,
+#network {
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+
 #cpu {
     background: #d65d0e;
 }
 
 #memory {
-    padding: 8px;
     background: #cc241d;
 }
 
 #network {
-    padding: 8px;
     background: #458588;
 }
