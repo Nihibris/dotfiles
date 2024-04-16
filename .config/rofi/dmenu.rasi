@@ -1,0 +1,67 @@
+* {
+    bg: #282828;
+    bg-s: #1d2021;
+    bg-h: #32302f;
+    bg1: #3c3836;
+    bg2: #504945;
+    bg3: #665c54;
+    bg4: #7c6f64;
+
+    fg: #fbf1c7;
+    fg1: #ebdbb2;
+    fg2: #d5c4a1;
+    fg3: #bdae93;
+    fg4: #a89984;
+
+    gray-l: #a89984;
+    gray-d: #928374;
+
+    red-d: #cc241d;
+    red-l: #fb4934;
+
+    green-d: #98971a;
+    green-l: #b8bb26;
+
+    yellow-d: #d79921;
+    yellow-l: #fabd2f;
+
+    blue-d: #458588;
+    blue-l: #83a598;
+
+    purple-d: #b16286;
+    purple-l: #d3869b;
+
+    aqua-d: #689d6a;
+    aqua-l: #8ec07c;
+
+    orange-d: #d65d0e;
+    orange-l: #fe8019;
+
+}
+
+element-text,
+window,
+entry,
+prompt {
+    color: @fg;
+    background-color: @bg;
+}
+
+element-text {
+    border-color: transparent;
+}
+
+element-text selected {
+    background-color: @green-l;
+    color: @bg-h;
+
+}
+
+
+window {
+    border: 2px solid;
+    border-color: @fg4;
+    border-radius: 8px;
+}
+
+/* vim:ft=css
