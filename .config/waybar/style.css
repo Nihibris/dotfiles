@@ -27,7 +27,9 @@ window#waybar.empty #window {
     background: transparent;
 }
 
-#workspaces {
+#workspaces,
+#clock {
+    color: #1d2021;
     background: #a89984;
 }
 
@@ -41,7 +43,6 @@ window#waybar.empty #window {
 
 #clock {
     font-weight: 800;
-    background: #1d2021;
 }
 
 #tray {
