@@ -37,6 +37,11 @@ bindsym XF86AudioPlay exec playerctl --ignore-player=firefox play-pause
 bindsym XF86AudioNext exec playerctl --ignore-player=firefox next 
 bindsym XF86AudioPrev exec playerctl --ignore-player=firefox previous 
 
+# ArcoLinux Logout
+bindsym $mod+Shift+e exec --no-startup-id archlinux-logout
+#bindsym $mod+X exec --no-startup-id archlinux-logout
+#bindsym $mod+Shift+X exec --no-startup-id arcolinux-powermenu
+
 bindsym $mod+d exec rofi -show drun
 bindsym $mod+e exec thunar
 bindsym $mod+Return exec $terminal 
@@ -120,7 +125,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 
 
@@ -149,6 +154,8 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+floating_modifier $mod
 
 # BACKGROUND
 set $bg "#282828"
@@ -214,6 +221,7 @@ gaps inner 10
 
 smart_gaps off 
 
+default_orientation horizontal
 default_border pixel 2
 default_floating_border none 
 
