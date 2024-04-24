@@ -9,7 +9,7 @@ return {
         "williamboman/mason-lspconfig.nvim",
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls", "gopls", "jdtls", "tsserver", "cssls", "svelte", "tailwindcss", "vimls", "pyright", "lemminx", "rnix" },
+                ensure_installed = { "lua_ls", "gopls", "jdtls", "tsserver", "cssls", "svelte", "tailwindcss", "vimls", "pyright", "lemminx" },
                 automatic_installation = true,
             })
         end,
@@ -50,9 +50,6 @@ return {
                 capabilities = capabilities,
             })
             lspconfig.lemminx.setup({
-                capabilities = capabilities,
-            })
-            lspconfig.rnix.setup({
                 capabilities = capabilities,
             })
             vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
