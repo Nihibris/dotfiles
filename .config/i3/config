@@ -3,16 +3,16 @@ set $terminal alacritty
 set $explorer thunar
 
 font pango:JetBrainsMono Nerd Font 12 
+exec --no-startup-id /usr/lib/polkit-kde-authentication-agent-1
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 exec --no-startup-id openrgb 
-exec discord
+exec --no-startup-id discord
 
+exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf 
 exec_always ~/.config/polybar/launch.sh
-exec_always picom -b --config ~/.config/picom/picom.conf 
-exec_always nitrogen --restore
-exec_always dunst
+#exec_always nitrogen --restore
 
 floating_modifier $mod
 
@@ -27,6 +27,10 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
+
+
+
+
 set $refresh_i3status killall -SIGUSR1 i3status
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
@@ -39,7 +43,7 @@ bindsym XF86AudioPrev exec playerctl --ignore-player=firefox previous
 
 # ArcoLinux Logout
 bindsym $mod+Shift+e exec --no-startup-id archlinux-logout
-#bindsym $mod+X exec --no-startup-id archlinux-logout
+bindsym $mod+X exec --no-startup-id archlinux-logout
 #bindsym $mod+Shift+X exec --no-startup-id arcolinux-powermenu
 
 bindsym $mod+d exec rofi -show drun
