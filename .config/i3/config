@@ -3,16 +3,18 @@ set $terminal alacritty
 set $explorer thunar
 
 font pango:JetBrainsMono Nerd Font 12 
-exec --no-startup-id /usr/lib/polkit-kde-authentication-agent-1
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id dunst
+
 exec --no-startup-id nm-applet
 exec --no-startup-id openrgb 
 exec --no-startup-id discord
 
-exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf 
-exec_always --no-startup-id ~/.config/polybar/launch.sh
-#exec_always nitrogen --restore
+#exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf 
+#exec --no-startup-id /usr/lib/polkit-kde-authentication-agent-1
 
 floating_modifier $mod
 
