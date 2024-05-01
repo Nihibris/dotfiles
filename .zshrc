@@ -1,4 +1,5 @@
-neofetch
+#neofetch
+fastfetch
 
 # Misc
 alias hx=helix
