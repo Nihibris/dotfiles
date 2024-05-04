@@ -26,6 +26,7 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 export PATH="$HOME/.bin:$PATH"
+export PATH="$HOME/.var/app/com.valvesoftware.Steam/.local/share/applications:$PATH"
 
 export EDITOR='nvim'
 export VISUAL='nvim'
