@@ -9,7 +9,7 @@ return {
         "williamboman/mason-lspconfig.nvim",
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls", "gopls", "jdtls", "tsserver", "cssls", "svelte", "tailwindcss", "vimls", "pyright", "lemminx" },
+                ensure_installed = { "lua_ls", "gopls", "jdtls", "tsserver", "cssls", "svelte", "tailwindcss", "vimls", "pyright", "lemminx", "clangd" },
                 automatic_installation = true,
             })
         end,
@@ -22,6 +22,9 @@ return {
         config = function()
             local capabilities = require("cmp_nvim_lsp").default_capabilities()
             local lspconfig = require("lspconfig")
+            lspconfig.clangd.setup({
+                capabilities = capabilities,
+            })
             lspconfig.lua_ls.setup({
                 capabilities = capabilities,
             })
